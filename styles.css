@@ -12,9 +12,7 @@
     margin: 0;
     font-family: 'Quicksand', sans-serif;
   }
-  .inactive{
-    display: none;
-  }
+
 
   nav {
     display: flex;
@@ -58,7 +56,7 @@
   }
   .navbar-email {
     color: var(--very-light-pink);
-    cursor: pointer;
+    cursor: pointer;  /* Para que aparezca la manito cuando pasamos el cursor*/
     font-size: var(--sm);
     margin-right: 12px;
   }
@@ -82,7 +80,12 @@
 
 
 
-/* style del menu a la derecha */
+/* style del menucito al dar click en email */
+
+  .inactive {
+    display: none;
+  } /* creamos una clase inactive para que al iniciar este inactivo por js*/
+
   .desktop-menu {
     position: absolute;
     top: 60px;
@@ -121,7 +124,7 @@
     display: inline-block;
   }
 
-
+/* @media */
   @media (max-width: 640px) {
     .menu {
       display: block;
